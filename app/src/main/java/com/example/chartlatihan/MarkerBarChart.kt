@@ -2,7 +2,6 @@ package com.example.chartlatihan
 
 import android.annotation.SuppressLint
 import android.content.Context
-import android.content.res.Resources
 import android.widget.TextView
 import com.github.mikephil.charting.components.MarkerView
 import com.github.mikephil.charting.data.Entry
@@ -24,8 +23,6 @@ class MarkerBarChart(context: Context, layoutResource: Int): MarkerView(context,
     }
 
     override fun getOffset(): MPPointF {
-        // Offset ini mungkin perlu sedikit disesuaikan agar panah menunjuk tepat
-        // ke tengah atas bar. Nilai default ini biasanya sudah cukup baik.
         return MPPointF(-(width / 2f), -height.toFloat())
     }
 }
