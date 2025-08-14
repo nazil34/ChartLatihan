@@ -6,27 +6,47 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
     android:padding="16dp"
     tools:context=".MainActivity">
 
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tab_layout"
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:tabIndicatorColor="#2196F3"
-        app:tabIndicator="@drawable/tab_indicator"
-        app:tabIndicatorFullWidth="true"
-        app:tabGravity="fill"
-        app:tabMode="fixed"
-        app:tabIndicatorHeight="3dp"
-        app:tabTextColor="@color/black"/>
+        android:elevation="8dp"
+        android:translationZ="4dp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="8dp"
+        app:contentPadding="16dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="#E9E8E8"
+        >
 
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/view_pager"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"/>
-    
-    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabIndicatorColor="#2196F3"
+                app:tabIndicator="@drawable/tab_indicator"
+                app:tabIndicatorFullWidth="true"
+                app:tabGravity="fill"
+                app:tabMode="fixed"
+                app:tabIndicatorHeight="3dp"
+                app:tabTextColor="@color/black"/>
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
 </LinearLayout>

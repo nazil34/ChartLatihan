@@ -6,4 +6,10 @@
     </style>
 
     <style name="Theme.ChartLatihan" parent="Base.Theme.ChartLatihan" />
+    <style name="Theme.ChartLatihan.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.ChartLatihan.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.ChartLatihan.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

@@ -14,13 +14,13 @@ import com.github.mikephil.charting.data.BarDataSet
 import com.github.mikephil.charting.data.BarEntry
 import com.github.mikephil.charting.formatter.ValueFormatter
 
-class MingguanFragment : Fragment() {
+class WeeklyFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_mingguan, container, false)
+        val view = inflater.inflate(R.layout.fragment_weekly, container, false)
 
         val weeklyChart: BarChart = view.findViewById(R.id.weekly_chart)
         setupBarChart(weeklyChart)

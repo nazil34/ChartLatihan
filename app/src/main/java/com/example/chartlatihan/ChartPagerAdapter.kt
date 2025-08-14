@@ -6,7 +6,7 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 
 class ChartPagerAdapter(activity: FragmentActivity): FragmentStateAdapter(activity) {
     override fun createFragment(position: Int): Fragment {
-        return if(position == 0) MingguanFragment() else BulananFragment()
+        return if(position == 0) WeeklyFragment() else BulananFragment()
     }
 
     override fun getItemCount(): Int {
